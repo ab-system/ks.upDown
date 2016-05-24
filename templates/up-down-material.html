@@ -1,15 +1,15 @@
-<div class="layout-row">
-    <div class="flex">
-            <input  md-no-asterisk ng-model="viewValue" ng-blur="onBlur()">
+<div class="layout-row" layout-align="center center">
+    <div class="flex-65">
+        <input  md-no-asterisk ng-model="viewValue" ng-blur="onBlur()">
     </div>
-    <div class="flex-5">
-        <md-button class="md-icon-button" aria-label="More" ng-click="up()">
-            <md-icon><i class="material-icons">keyboard_arrow_up</i></md-icon>
+    <div class="flex-35 arrows">
+
+        <md-button style="margin: 0; padding: 0; height: 36px; width: 36px;" class="md-icon-button" aria-label="More" ng-click="up()">
+            <md-icon>keyboard_arrow_up</md-icon>
         </md-button>
 
-        <md-button class="md-icon-button" ng-click="down()" aria-label="More">
-            <md-icon><i class="material-icons">keyboard_arrow_down</i></md-icon>
+        <md-button style="margin: 0; padding: 0; height: 36px; width: 36px;" class="md-icon-button" ng-click="down()" aria-label="More">
+            <md-icon>keyboard_arrow_down</md-icon>
         </md-button>
     </div>
 </div>
-</md-input-container>
