@@ -1,6 +1,6 @@
 ﻿
 angular
-    .module("components")
+    .module("ks.upDown", [])
     .value('upDownSettings', { templateUrl: 'templates/up-down-bootstrap.html' })
     .directive("upDown", [
         'upDownSettings', '$log', function (upDownSettings, $log) {

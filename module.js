@@ -2,7 +2,7 @@
  * Created by eolt on 08.10.2015.
  */
 
-    angular.module('components', ['ui.bootstrap', 'ngMaterial'])
+    angular.module('components', ['ui.bootstrap', 'ngMaterial', 'ks.upDown'])
         .config([function () {
 
             }
