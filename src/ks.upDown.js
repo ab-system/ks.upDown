@@ -1,7 +1,7 @@
 ﻿
 angular
     .module("ks.upDown", [])
-    .value('upDownSettings', { templateUrl: 'templates/up-down-bootstrap.html' })
+    .value('upDownSettings', { templateUrl: 'src/templates/ks.updown.bootstrap.html' })
     .directive("upDown", [
         'upDownSettings', '$log', function (upDownSettings, $log) {
             var re = /^-?[0-9]\d*(\.\d+)?$/;

@@ -1,0 +1,16 @@
+[up-down] md-input-container {
+    margin-bottom: 0;
+    height: 30px;
+    display: block;
+}
+
+[up-down] button {
+    min-width: 0;
+    margin: 0;
+    width: 100%;
+}
+
+[up-down] .btns .flex
+{
+    padding-right: 2px;
+}
