@@ -33,6 +33,7 @@ angular
                     max: '@',
                     min: '@',
                     default: '@',
+                    label: '@',
                     onChange: '&?'
                 },
 

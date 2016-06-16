@@ -1,7 +1,8 @@
 <div class="layout-column">
 
     <md-input-container>
-        <input  md-no-asterisk ng-model="viewValue" ng-blur="onBlur()">
+        <label ng-show="label" ng-bind="label"></label>
+        <input md-no-asterisk ng-model="viewValue" ng-blur="onBlur()">
     </md-input-container>
 
     <div class="layout-row btns">

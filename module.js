@@ -3,10 +3,6 @@
  */
 
     angular.module('components', ['ui.bootstrap', 'ngMaterial', 'ks.upDown'])
-        .config([function () {
-
-            }
-        ])
         .controller('mainCtrl', [ '$scope', function($scope) {
             $scope.intModel = 6;
             $scope.floatModel = 2;
