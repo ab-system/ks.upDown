@@ -40,7 +40,9 @@ angular
                 link: function link(scope, element, attrs, ngModelCtrl) {
 
                     function trace(message){
-                        $log.debug('upDown: ' + message);
+                        if(attrs.trace == '') {
+                            $log.debug('upDown >> ' + message);
+                        }
                     }
 
                     var step = scope.step ? parseFloat(scope.step) : 1;
@@ -52,7 +54,7 @@ angular
 
 
                     function test(value) {
-                        if (value != '') {
+                        if (value != '' && value != '-' ) {
                             function minMaxTest() {
                                 if (!isNullOrUndefined(min) && value < min) {
                                     trace('invalid value: ' + value + ', min value: ' + min);
@@ -78,6 +80,7 @@ angular
                                     value = addZeroResult.result;
                                 }
                                 else {
+                                    value = parseFloat(value);
                                     var minMax = minMaxTest();
                                     if (!minMax.valid) {
                                         return minMax;
